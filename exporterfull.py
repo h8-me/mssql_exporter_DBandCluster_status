@@ -24,8 +24,8 @@ if __name__ == '__main__':
     password = 'userpassword'
     port = 1433  # Порт MSSQL
 
-    # Запуск HTTP сервера Prometheus на порту 8001
-    start_http_server(8002)
+    # Запуск HTTP сервера Prometheus на порту 8000
+    start_http_server(8000)
 
     # Создание метрик для Prometheus
     db_read_only_status = Gauge('db_read_only_status', 'Database read-only status', ['database'])
